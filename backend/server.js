@@ -1,9 +1,13 @@
 import express from 'express';
 import cors from 'cors';
 import moviesRouter from './api/movies.route.js';
+import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 
 // Connect to MongoDB using createConnection
+
+
+dotenv.config()
 const connection = mongoose.createConnection(process.env.MOVIEREVIEW_DB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
