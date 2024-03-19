@@ -17,7 +17,7 @@ moviesPerPage})
 let response ={
 movies: moviesList,
 page: page,
-filters: filters,
+filters:filters,
 entries_per_page: moviesPerPage,
 total_results: totalNumMovies,
 }
